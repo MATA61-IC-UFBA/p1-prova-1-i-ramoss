@@ -50,7 +50,7 @@ stmt
 ;
 
 exprlist
-    : exprlist ',' expr
+    : exprlist COMMA expr
     | expr
 ;
 
