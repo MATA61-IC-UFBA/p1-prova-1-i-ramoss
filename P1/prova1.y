@@ -26,7 +26,7 @@ void yyerror(const char *msg);
 %token IDENT
 %token NUM
 
-%token EOL 0
+%token EOL
 %token ERROR
 
 %start program

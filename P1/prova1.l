@@ -42,8 +42,7 @@ ID                          {LETTER}[{LETTER}|{INTEGER}|_]*
 {REAL}                      { return NUM; }
 {INTEGER}                   { return NUM; }
 
-[ \t]+                      { /* ignorar espaços */ }
-\n                          { return EOL; }
+[ \t\n]+                    { /* ignorar espaços e quebra de linha */ }
 .                           { return ERROR; }
 
 %%
