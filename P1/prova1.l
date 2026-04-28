@@ -16,7 +16,7 @@ INTEGER                     {DIGIT}+
 REAL                        {INTEGER}"."{INTEGER}
 
 STRING                      \"[^"\n]*\"
-ID                          {LETTER}[{LETTER}|{INTEGER}|_]*
+ID                          {LETTER}({LETTER}|{INTEGER}|_)*
 
 
 %%
