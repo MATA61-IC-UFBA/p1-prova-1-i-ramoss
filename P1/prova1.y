@@ -68,6 +68,8 @@ term
 
 factor
     : LPAREN expr RPAREN
+    | CONCAT LPAREN exprlist RPAREN
+    | LENGTH LPAREN expr RPAREN
     | NUM
     | IDENT
     | STRING
